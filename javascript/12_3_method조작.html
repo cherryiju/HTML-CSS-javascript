@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>method manipulation</title>
+    <style>
+      .red-color {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="https://www.gilbut.co.kr">길벗</a>
+      <a href="https://www.gilbut.co.kr" data-link="길벗">길벗</a>
+    </div>
+    <script>
+      const aE1 = document.querySelectorAll('a')[0];
+      const href = aE1.getAttribute('href');
+      aE1.setAttribute('href', 'http://www.sucoding.kr');
+      aE1.innerText = '수코딩';
+      aE1.setAttribute('target', '_blank');
+
+      aE2 = document.querySelectorAll('a')[1];
+      aE2.setAttribute('data-link', '이지톡');
+      aE2.setAttribute('class', 'red-color');
+    </script>
+  </body>
+</html>

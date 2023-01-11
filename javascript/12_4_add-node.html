@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Node</title>
+  </head>
+  <body>
+    <script>
+      const new_node = document.createElement('a');
+      document.body.appendChild(new_node);
+      const txtE1 = document.createTextNode('길벗');
+      document.querySelector('a').appendChild(txtE1);
+      const hrefAttr = document.createAttribute('href');
+      hrefAttr.value = 'https://www.gilbut.co.kr';
+      document.querySelector('a').setAttributeNode(hrefAttr);
+    </script>
+  </body>
+</html>
